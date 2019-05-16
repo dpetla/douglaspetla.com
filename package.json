@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
     "start": "ng serve",
     "build": "ng build",
     "lint": "ng lint personal-blog",
@@ -31,6 +32,7 @@
     "@nguniversal/common": "^6.0.0",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "@schuchard/prettier": "^3.1.0",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "ngx-markdown": "^7.1.5",
@@ -47,9 +49,24 @@
     "@types/node": "^8.0.30",
     "codelyzer": "^4.0.2",
     "http-server": "^0.10.0",
+    "husky": "2.3.0",
+    "lint-staged": "8.1.7",
     "pre-commit": "^1.2.2",
+    "prettier": "1.17.1",
     "ts-loader": "^4.2.0",
     "tslint": "^5.7.0",
+    "tslint-config-prettier": "1.18.0",
     "typescript": "3.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,less,md,ts,html,component.html}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
