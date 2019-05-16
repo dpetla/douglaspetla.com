@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { bgOption } from '../app.component';
 
 @Component({
@@ -9,7 +10,9 @@ import { bgOption } from '../app.component';
 export class HomeComponent implements OnInit {
   option: number = bgOption;
 
-  constructor() {}
+  constructor(private title: Title) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.title.setTitle('Douglas Petla');
+  }
 }

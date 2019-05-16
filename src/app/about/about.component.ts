@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { bgOption } from '../app.component';
 
 @Component({
@@ -13,7 +14,9 @@ export class AboutComponent implements OnInit {
   imgUrl = 'assets/media/architecture-buildings-canada-374870.jpg';
   option: number = bgOption;
 
-  constructor() {}
+  constructor(private title: Title) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.title.setTitle('About ∙ Douglas Petla');
+  }
 }

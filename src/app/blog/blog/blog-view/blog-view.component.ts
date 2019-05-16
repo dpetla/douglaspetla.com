@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { postsMetadata, PostsMetadata } from './../../../../assets/blog/blog';
+import { Title } from '@angular/platform-browser';
+import { PostMetadata, postsMetadata } from './../../../../assets/blog/blog';
 
 @Component({
   selector: 'app-blog-view',
@@ -11,11 +12,12 @@ export class BlogViewComponent implements OnInit {
   heading = 'Blog';
   subheading = 'Things I talk about the web';
   imgUrl = 'assets/media/computer-hands-laptop-2115217.jpg';
-  postsMeta: Array<PostsMetadata>;
+  postsMeta: Array<PostMetadata>;
 
-  constructor() {}
+  constructor(private title: Title) {}
 
   ngOnInit() {
     this.postsMeta = postsMetadata;
+    this.title.setTitle(`Blog ∙ Douglas Petla`);
   }
 }
