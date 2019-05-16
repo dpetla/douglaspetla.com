@@ -35,7 +35,8 @@
     "express": "^4.15.2",
     "ngx-markdown": "^7.1.5",
     "reflect-metadata": "^0.1.10",
-    "rxjs": "6.5.1",
+    "rxjs": "6.5.2",
+    "startbootstrap-clean-blog": "^5.0.5",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
