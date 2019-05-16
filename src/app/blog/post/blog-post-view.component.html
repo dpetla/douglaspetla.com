@@ -1,0 +1,15 @@
+<app-header
+  *ngIf="meta$ | async as meta"
+  [heading]="meta.title"
+  [subheading]="meta.subheading"
+  [imgUrl]="meta.img"
+></app-header>
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div markdown [src]="post$ | async"></div>
+      </div>
+    </div>
+  </div>
+</article>
