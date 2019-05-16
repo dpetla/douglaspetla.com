@@ -1,52 +1,27 @@
-<div style="margin: 0px auto;">
-  <main class="container center white-text bg-13">
-    <div>
-      <div style="max-width: 100px; margin-bottom: 1.45rem;">
-        <div class=" gatsby-image-wrapper" style="position: relative; overflow: hidden;">
-          <div style="width: 100%; padding-bottom: 100%;"></div>
-          <img
-            src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAMEBQL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHGtQWjPBJ0EQP/xAAcEAACAgIDAAAAAAAAAAAAAAABAgADBBIQETH/2gAIAQEAAQUCUbNdSK+Kz0ch92i+Qz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAbEAABBAMAAAAAAAAAAAAAAAABABARISAxUf/aAAgBAQAGPwIBUZaeKtY//8QAGhAAAwADAQAAAAAAAAAAAAAAAAEREDFBUf/aAAgBAQABPyF6Hrgww4a9UTFqng9mwZsf/9oADAMBAAIAAwAAABCjyAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAbEAEBAQACAwAAAAAAAAAAAAABEQAhcRBBkf/aAAgBAQABPxB0IlT6uJE0KyZ4c3HEA9aI9jale9Ys/pm+P//Z"
-            alt="profile picture"
-            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; transition: opacity 0.5s ease 0.5s;"
-          /><picture
-            ><source
-              srcset="
-                /static/12b7d9f2e53a8707960606748f7cb220/bf99b/profile-pic.jpg  75w,
-                /static/12b7d9f2e53a8707960606748f7cb220/9d7df/profile-pic.jpg 150w,
-                /static/12b7d9f2e53a8707960606748f7cb220/53b4a/profile-pic.jpg 300w,
-                /static/12b7d9f2e53a8707960606748f7cb220/eccb2/profile-pic.jpg 400w
-              "
-              sizes="(max-width: 300px) 100vw, 300px"/>
-            <img
-              alt=""
-              src="/static/12b7d9f2e53a8707960606748f7cb220/53b4a/profile-pic.jpg"
-              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 0.5s ease 0s;"/></picture
-          ><noscript
-            ><picture
-              ><source
-                srcSet="/static/12b7d9f2e53a8707960606748f7cb220/bf99b/profile-pic.jpg 75w,
-  /static/12b7d9f2e53a8707960606748f7cb220/9d7df/profile-pic.jpg 150w,
-  /static/12b7d9f2e53a8707960606748f7cb220/53b4a/profile-pic.jpg 300w,
-  /static/12b7d9f2e53a8707960606748f7cb220/eccb2/profile-pic.jpg 400w"
-                sizes="(max-width: 300px) 100vw, 300px"/>
-              <img
-                src="/static/12b7d9f2e53a8707960606748f7cb220/53b4a/profile-pic.jpg"
-                alt=""
-                style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture
-          ></noscript>
+<app-header
+  [heading]="heading"
+  [subheading]="subheading"
+  [imgUrl]="imgUrl"
+></app-header>
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="about-title">Hello ...</div>
+        <div class="about-description">
+          <p>
+            My name is Douglas Petla and I am an engineer that found a passion
+            in software development and transitioned to working full-time as a
+            software developer. Currently, I spend my days building amazing web
+            applications and learning about the latest technologies.
+          </p>
+          <p>
+            Lately, I've been working mostly with front-end development with
+            Javascript, Typescript, and Angular, and some backend using Java and
+            Spring boot.
+          </p>
         </div>
       </div>
-      <div class="headline">Hello ...</div>
-      <p>
-        My name is Douglas Petla and I am an engineer that found a passion in software development
-        and transitioned to working full-time as a software developer. Currently, I spend my days
-        building amazing web applications and learning about the latest technologies.
-      </p>
-      <p>
-        Lately, I've been working mostly with front-end development with Javascript, Typescript, and
-        Angular, and some backend using Java and Spring boot.
-      </p>
-      <a class="link text-white" routerLink="/">home</a>
     </div>
-  </main>
-</div>
+  </div>
+</article>
