@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { bgOption } from '../app.component';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +7,6 @@ import { bgOption } from '../app.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  option: number = bgOption;
-
   constructor(private title: Title) {}
 
   ngOnInit() {

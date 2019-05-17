@@ -1,7 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:600|Open+Sans'); */
-
 html {
-  /* font-family: 'Open Sans', sans-serif; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -14,4 +11,16 @@ body {
 
 a:hover {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+  #mainNav {
+    border-bottom: 1px solid transparent !important;
+    background: 0 0 !important;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a {
+    padding: 10px 20px !important;
+    color: #fff !important;
+  }
 }

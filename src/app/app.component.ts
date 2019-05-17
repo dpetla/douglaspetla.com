@@ -8,5 +8,3 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(public router: Router) {}
 }
-
-export const bgOption = Math.floor(Math.random() * 15) + 1;
