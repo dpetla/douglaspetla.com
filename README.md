@@ -18,17 +18,3 @@ My personal blog. Project started with the [Angular Universal](https://github.co
 
 **`npm run build:prerender && npm run serve:prerender`** - Compiles your application and prerenders your applications files, spinning up a demo http-server so you can view it on `http://localhost:8080`
 **Note**: To deploy your static site to a static hosting platform you will have to deploy the `dist/browser` folder, rather than the usual `dist`
-
-### Build Time Pre-rendering vs. Server-side Rendering (SSR)
-
-This repo demonstrates the use of 2 different forms of Server-side Rendering.
-
-**Pre-render**
-
-- Happens at build time
-- Renders your application and replaces the dist index.html with a version rendered at the route `/`.
-
-**Server-side Rendering (SSR)**
-
-- Happens at runtime
-- Uses `ngExpressEngine` to render your application on the fly at the requested url.
