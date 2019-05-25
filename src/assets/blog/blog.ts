@@ -1,13 +1,20 @@
-export interface PostsMetadata {
+import { MetaDefinition } from '@angular/platform-browser';
+
+export interface PostMetadata {
   id: string;
   title: string;
   subtitle: string;
   subheading: string;
-  tags: Array<string>;
+  tags: MetaDefinition[];
   author: Author;
   data: string;
   readTime: number;
   img: string;
+}
+
+interface Tag {
+  name: string;
+  content: string;
 }
 
 interface Author {
@@ -15,35 +22,42 @@ interface Author {
   url: string;
 }
 
-export const postsMetadata: Array<PostsMetadata> = [
-  {
-    id: 'cdk-drag-and-drop',
-    title: 'Angular CDK Drag & Drop',
-    subtitle: 'Angular Material version 7 Drag & Drop Available',
-    subheading: `This is a custom description for SEO and Open Graph purposes,
-    rather than the default generated excerpt.`,
-    tags: ['angular', 'cdk', 'drag-and-drop'],
-    author: {
-      name: 'Douglas Petla',
-      url: 'https://twitter.com/douglaspetla'
-    },
-    data: '2019-03-02T22:40:32.169Z',
-    readTime: 5,
-    img: 'assets/media/blue-blue-water-bubble-932320.jpg'
-  },
+const authors = {
+  DOUGLAS_PETLA: {
+    name: 'Douglas Petla',
+    url: 'https://twitter.com/douglaspetla'
+  }
+};
+
+export const postsMetadata: Array<PostMetadata> = [
+  // {
+  //   id: 'cdk-drag-and-drop',
+  //   title: 'Angular CDK Drag & Drop',
+  //   subtitle: 'Angular Material version 7 Drag & Drop Available',
+  //   subheading: `This is a custom description for SEO and Open Graph purposes,
+  //   rather than the default generated excerpt.`,
+  //   tags: [
+  //     { name: 'angular', content: '' },
+  //     { name: 'cdk', content: 'cdk' },
+  //     { name: 'drag-and-drop', content: 'drag-and-drop' }
+  //   ],
+  //   author: authors.DOUGLAS_PETLA,
+  //   data: '2019-03-02T22:40:32.169Z',
+  //   readTime: 5,
+  //   img: 'assets/media/blue-blue-water-bubble-932320.jpg'
+  // },
   {
     id: 'hello-world',
-    title: 'Hello World',
-    subtitle: 'my first blog post',
-    subheading: `This is a custom description for SEO and Open Graph purposes,
-    rather than the default generated excerpt. Simply add a description field to the frontmatter.`,
-    tags: ['blog', 'hello world'],
-    author: {
-      name: 'Douglas Petla',
-      url: 'https://twitter.com/douglaspetla'
-    },
-    data: 'March 20, 2019',
-    readTime: 4,
+    title: 'Hello World!',
+    subtitle: 'Welcome to my blog',
+    subheading: `A very brief introduction about me, and what I hope to achieve with my writing.`,
+    tags: [
+      { name: 'blog', content: 'blog' },
+      { name: 'hello world', content: 'hello world' }
+    ],
+    author: authors.DOUGLAS_PETLA,
+    data: 'May 25, 2019',
+    readTime: 1,
     img: 'assets/media/dock-feet-footwear-128299.jpg'
   }
 ];
