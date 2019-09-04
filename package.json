@@ -32,13 +32,12 @@
     "@nguniversal/common": "^6.0.0",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
-    "@schuchard/prettier": "^3.1.0",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "ngx-markdown": "^7.1.5",
     "reflect-metadata": "^0.1.10",
     "rxjs": "6.5.2",
-    "startbootstrap-clean-blog": "^5.0.5",
+    "startbootstrap-clean-blog": "^5.0.6",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -46,6 +45,7 @@
     "@angular/cli": "7.3.9",
     "@angular/compiler-cli": "^7.2.15",
     "@angular/language-service": "7.2.15",
+    "@schuchard/prettier": "^3.1.0",
     "@types/node": "^8.0.30",
     "codelyzer": "^4.0.2",
     "http-server": "^0.10.0",
