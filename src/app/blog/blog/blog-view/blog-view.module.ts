@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { HeaderModule } from '../../../header/header.module';
+import { SharedModule } from '../../../shared/shared.module';
 import { BlogViewComponent } from './blog-view.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { BlogViewComponent } from './blog-view.component';
       }
     ]),
     MarkdownModule.forChild(),
-    HeaderModule
+    HeaderModule,
+    SharedModule
   ]
 })
 export class BlogViewModule {}

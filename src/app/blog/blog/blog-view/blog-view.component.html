@@ -21,8 +21,8 @@
         <p class="post-meta">
           Posted by
           <a href="{{ post.author.url }}">{{ post.author.name }}</a>
-          on {{ post.data | date: 'fullDate' }}
-          <span class="read-time"> ∙ ⏱{{ post.readTime }} min read</span>
+          on {{ post.date | date: 'fullDate' }}
+          <app-read-time [minutes]="post.readTime"></app-read-time>
         </p>
         <hr />
       </div>
