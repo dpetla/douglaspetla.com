@@ -7,7 +7,7 @@ export interface PostMetadata {
   subheading: string;
   tags: MetaDefinition[];
   author: Author;
-  data: string;
+  date: string;
   readTime: number;
   img: string;
 }
@@ -42,10 +42,24 @@ export const postsMetadata: Array<PostMetadata> = [
   //     { name: 'drag-and-drop', content: 'drag-and-drop' }
   //   ],
   //   author: authors.DOUGLAS_PETLA,
-  //   data: '2019-03-02T22:40:32.169Z',
+  //   date: '2019-03-02T22:40:32.169Z',
   //   readTime: 5,
   //   img: 'assets/media/blue-blue-water-bubble-932320.jpg'
   // },
+  {
+    id: 'angular-compiler',
+    title: 'Compiling...',
+    subtitle: 'An Overview of the Angular Compiler',
+    subheading: `A brief explantion about how the angular compiler works.`,
+    tags: [
+      { name: 'angular', content: 'angular' },
+      { name: 'compiler', content: 'compiler' }
+    ],
+    author: authors.DOUGLAS_PETLA,
+    date: 'Sep 2, 2019',
+    readTime: 2,
+    img: 'assets/media/angular-compiler-transformation-banner.jpg'
+  },
   {
     id: 'hello-world',
     title: 'Hello World!',
@@ -56,7 +70,7 @@ export const postsMetadata: Array<PostMetadata> = [
       { name: 'hello world', content: 'hello world' }
     ],
     author: authors.DOUGLAS_PETLA,
-    data: 'May 25, 2019',
+    date: 'May 25, 2019',
     readTime: 1,
     img: 'assets/media/dock-feet-footwear-128299.jpg'
   }
