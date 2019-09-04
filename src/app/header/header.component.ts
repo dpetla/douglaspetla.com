@@ -15,6 +15,8 @@ export class HeaderComponent implements OnInit {
   @Input() heading: string;
   @Input() subheading: string;
   @Input() imgUrl: string;
+  @Input() date: string;
+  @Input() readTime: number;
 
   constructor() {}
 

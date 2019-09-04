@@ -6,6 +6,8 @@
         <div class="site-heading">
           <h1>{{ heading }}</h1>
           <span class="subheading">{{ subheading }}</span>
+          <span *ngIf="date" class="date">{{ date | date: 'mediumDate' }}</span>
+          <app-read-time [minutes]="readTime"></app-read-time>
         </div>
       </div>
     </div>
