@@ -14,6 +14,7 @@ import { PostMetadata, postsMetadata } from '../../../assets/blog/blog';
 export class BlogPostViewComponent implements OnInit {
   post$: Observable<PostMetadata>;
   postUrl$: Observable<string>;
+  discussionUrl$: Observable<string>;
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -37,6 +38,15 @@ export class BlogPostViewComponent implements OnInit {
     );
     this.postUrl$ = this.route.params.pipe(
       map(params => `./assets/blog/post/${params['id']}.md`)
+    );
+
+    this.discussionUrl$ = this.route.params.pipe(
+      map(
+        params =>
+          `https://mobile.twitter.com/search?q=https://douglaspetla.com/blog/post/${
+            params['id']
+          }`
+      )
     );
   }
 
