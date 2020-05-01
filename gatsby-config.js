@@ -1,16 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Douglas Petla`,
     author: {
       name: `Douglas Petla`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `who lives and works in San Francisco building useful things.`, // TODO remove?
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A starter blog demonstrating what Gatsby can do.`, // TODO remove??
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `douglaspetla`,
       github: `dpetla`,
       linkedIn: `douglaspetla`,
+    },
+    section: {
+      about: {
+        title: "About",
+        subTitle: "Hello, I am Douglas",
+      },
+      blog: {
+        title: "Blog",
+        subTitle: "Thing I talk about the web",
+      },
     },
   },
   plugins: [
@@ -62,13 +72,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Douglas Petla`,
+        short_name: `Douglas Petla`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#0073B1`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon-48x48.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
