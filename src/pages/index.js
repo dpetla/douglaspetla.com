@@ -1,5 +1,5 @@
 import React from "react"
-import "./index.scss"
+import "./index.css"
 import NavBar from "../components/nav-bar"
 // import { Link, graphql } from "gatsby"
 
@@ -13,11 +13,15 @@ const BlogIndex = ({ data, location }) => {
   // const posts = data.allMarkdownRemark.edges
 
   return (
-    <div className="home">
+    <div className="home__bg--gradient flex flex-col h-screen text-white px-10 lg:px-64 md:px-32">
       <NavBar />
-      <main className="container">
-        <h2 className="headline">Douglas Petla</h2>
-        <h3 className="description">Software Developer</h3>
+      <main className="flex flex-col flex-grow justify-center">
+        <h2 className="text-headline leading-normal font-bold font-display">
+          Douglas Petla
+        </h2>
+        <h3 className="text-5xl leading-normal font-bold font-display">
+          Software Developer
+        </h3>
       </main>
     </div>
     // <Layout location={location} title={siteTitle}>
