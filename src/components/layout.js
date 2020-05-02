@@ -22,8 +22,12 @@ const Layout = ({ title, subTitle, imageData, children }) => {
         {children}
       </main>
       <footer className="text-center border-t border-gray-300">
-        <div className="mx-auto max-w-3xl my-16">
-          Made with <span role="img">❤️</span> by Douglas Petla
+        <div className="mx-auto max-w-3xl my-16 antialiased">
+          Made with{" "}
+          <span role="img" aria-label="heart">
+            ❤️
+          </span>{" "}
+          by Douglas Petla
         </div>
       </footer>
     </>
