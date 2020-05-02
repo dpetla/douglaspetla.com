@@ -17,6 +17,7 @@ module.exports = {
     },
     fontFamily: {
       display: ["Helvetica\\ Neue", "Helvetica", "Arial", "sans-serif"],
+      serif: ["Lora", "Times\\ New Roman", "serif"],
     },
   },
   variants: {
