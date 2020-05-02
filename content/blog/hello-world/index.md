@@ -1,22 +1,23 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+date: "2019-05-25T22:12:03.284Z"
+description: "A very brief introduction about me, and what I hope to achieve with my writing."
 ---
 
-This is my first post on my new fake blog! How exciting!
+# Hello World!
 
-I'm sure I'll write a lot more interesting things in the future.
+I would like this post to serve as a very brief introduction about me, and what I hope to achieve with my writing.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+#### About me
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+My name is Douglas Petla, and I am an engineer that found a passion in software development and transitioned to working full-time as a software developer.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+Lately, I've been working mostly with front-end development with Javascript, Typescript, and Angular, and some backend using Java and Spring boot.
+
+#### Starting a personal blog
+
+I've been thinking about the idea of starting my own blog to talk about web development and other things I find interesting for some time now, but I have always held back on the idea due the fact to writing is not my forte.
+
+I decide not to care about my fears and laziness toward writing and actually start doing it. I believe the process of research and documenting the things I learn and practice via blog posts will help me better understands some topics, but more importantly, it may help someone also.
+
+My goal starting this blog is that you can take something - anything - from the content on this blog, which can benefit you and your approach to developing great software.
