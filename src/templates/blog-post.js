@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -29,7 +28,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       </section>
 
       <nav className="mt-12">
-        <ul className="flex flex-wrap justify-between list-none p-0">
+        <ul className="flex flex-wrap justify-between list-none p-0 hover:text-blue-800">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
