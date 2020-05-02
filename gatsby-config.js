@@ -5,7 +5,7 @@ module.exports = {
       name: `Douglas Petla`,
       summary: `Software Developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`, // TODO remove??
+    description: `Douglas Petla's personal blog`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `douglaspetla`,
