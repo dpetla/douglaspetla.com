@@ -3,7 +3,7 @@ module.exports = {
     title: `Douglas Petla`,
     author: {
       name: `Douglas Petla`,
-      summary: `who lives and works in San Francisco building useful things.`, // TODO remove?
+      summary: `Software Developer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`, // TODO remove??
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
