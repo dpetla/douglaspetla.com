@@ -19,6 +19,8 @@ module.exports = {
       display: ["Helvetica\\ Neue", "Helvetica", "Arial", "sans-serif"],
     },
   },
-  variants: {},
+  variants: {
+    borderWidth: ["responsive", "last", "hover", "focus"],
+  },
   plugins: [],
 }

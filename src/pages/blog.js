@@ -14,23 +14,24 @@ const BlogIndex = ({ data }) => {
       <SEO title={blog.title} />
       <section className="flex flex-col space-y-6">
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+          const { slug } = node.fields
+          const { title, subTitle, date } = node.frontmatter
           return (
             <article
-              key={node.fields.slug}
-              className="flex flex-col space-y-4 border-b pb-4"
+              key={slug}
+              className="flex flex-col space-y-4 pb-4 border-b last:border-b-0"
             >
-              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                <h2 className="font-display text-4xl font-extrabold hover:text-blue-700">
-                  {title}
+              <Link className="shadow-none" to={slug}>
+                <h2 className="font-display text-4xl font-extrabold hover:text-blue-800">
+                  {title || slug}
                 </h2>
               </Link>
               <h3 className="font-display text-2xl font-light antialiased">
-                {node.frontmatter.subTitle}
+                {subTitle}
               </h3>
               <small className="text-base font-serif text-gray-600 font-hairline antialiased">
                 <span className="italic">
-                  Posted by <strong>{author}</strong> on {node.frontmatter.date}
+                  Posted by <strong>{author}</strong> on {date}
                 </span>{" "}
                 •
                 <span role="img" aria-label="clock">
@@ -38,13 +39,13 @@ const BlogIndex = ({ data }) => {
                 </span>
                 {node.timeToRead} min
               </small>
-              <section>
-                {/* <p
+              {/* <section>
+                <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }}
-                /> */}
-              </section>
+                />
+              </section> */}
             </article>
           )
         })}
