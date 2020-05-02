@@ -19,6 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                headerImage
               }
             }
           }
@@ -45,6 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
+        headerImage: `/${post.node.frontmatter.headerImage}/`,
       },
     })
   })
