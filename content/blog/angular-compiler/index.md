@@ -3,7 +3,7 @@ title: Compiling...
 subTitle: An Overview of the Angular Compiler
 date: "2019-09-02T22:40:32.169Z"
 description: A brief explanation about how the angular compiler works.
-headerImage: angular-compiler-transformation-banner.jpg
+headerImage: /angular-compiler-transformation-banner.jpg/
 ---
 
 Generally speaking, Angular applications are basically composed of components and their HTML templates. The code created for Angular applications cannot run directly in the browser and requires a compilation to transform this Angular specific code to a very optimized TypeScript code by the Angular compiler, and then to Javascript (that the browser can understand) by the TypeScript compiler. Even though there is more than one compiler involved the Angular build process in this article I will only be talking about the Angular compiler.
@@ -56,5 +56,5 @@ In this article, I only scratched the surface of the Angular compiler. If you wo
 - [The Angular Compiler 4.0](https://www.youtube.com/watch?v=RXYjPYkFwy4) by [Tobias Bosch](https://twitter.com/tbosch1009)
 
 - [Mad science with the Angular Compiler](https://www.youtube.com/watch?v=tBV4IQwPssU) by [Minko Gachev](https://twitter.com/mgechev).
-- [Gentle introduction into compilers. Part 1: Lexical analysis and Scanner](https://blog.angularindepth.com/gentle-introduction-into-compilers-part-1-lexical-analysis-and-scanner-733246be6738) by [Max Koretskyi](https://twitter.com/maxkoretskyi)
-- [A Deep, Deep, Deep, Deep, Deep Dive into the Angular Compiler](https://blog.angularindepth.com/a-deep-deep-deep-deep-deep-dive-into-the-angular-compiler-5379171ffb7a) by [Uri Shaked](https://twitter.com/UriShaked)
+- [Gentle introduction into compilers. Part 1: Lexical analysis and Scanner](https://indepth.dev/gentle-introduction-into-compilers-part-1-lexical-analysis-and-scanner/) by [Max Koretskyi](https://twitter.com/maxkoretskyi)
+- [A Deep, Deep, Deep, Deep, Deep Dive into the Angular Compiler](https://indepth.dev/a-deep-deep-deep-deep-deep-dive-into-the-angular-compiler/) by [Uri Shaked](https://twitter.com/UriShaked)

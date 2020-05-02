@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
-        headerImage: `/${post.node.frontmatter.headerImage}/`,
+        headerImage: post.node.frontmatter.headerImage,
       },
     })
   })
