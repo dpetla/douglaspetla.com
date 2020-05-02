@@ -3,6 +3,7 @@ title: Compiling...
 subTitle: An Overview of the Angular Compiler
 date: "2019-09-02T22:40:32.169Z"
 description: A brief explanation about how the angular compiler works.
+headerImage: angular-compiler-transformation-banner.jpg
 ---
 
 Generally speaking, Angular applications are basically composed of components and their HTML templates. The code created for Angular applications cannot run directly in the browser and requires a compilation to transform this Angular specific code to a very optimized TypeScript code by the Angular compiler, and then to Javascript (that the browser can understand) by the TypeScript compiler. Even though there is more than one compiler involved the Angular build process in this article I will only be talking about the Angular compiler.
