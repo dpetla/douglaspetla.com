@@ -1,6 +1,6 @@
 import React from "react"
-import "./index.css"
 import NavBar from "../components/nav-bar"
+import "./index.css"
 // import { Link, graphql } from "gatsby"
 
 // import Bio from "../components/bio"

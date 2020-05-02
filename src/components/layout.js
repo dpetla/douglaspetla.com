@@ -1,69 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
+import NavBar from "../components/nav-bar"
+import BackgroundImage from "gatsby-background-image"
 
-import { rhythm, scale } from "../utils/typography"
-
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
-
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+const Layout = ({ title, subTitle, imageData, children }) => {
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
-      <header>{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+    <>
+      <BackgroundImage
+        Tag="header"
+        className="font-display text-white text-center bg-center bg-cover bg-no-repeat px-10 lg:px-64 md:px-32 relative"
+        fluid={imageData}
+        backgroundColor={`#868e96`}
+      >
+        {/* <div className="absolute top-0 left-0 h-full w-full opacity-50 bg-gray-700"></div> TODO overlay behind text */}
+        <NavBar />
+        <div className="pt-20 sm:pt-40 md:pt-48 pb-20 sm:pb-40 md:pb-48">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-2">{title}</h1>
+          <span className="text-3xl font-light">{subTitle}</span>
+        </div>
+      </BackgroundImage>
+      <main className="mx-auto max-w-3xl pb-16 pt-20 px-4 lg:px-0">
+        {children}
+      </main>
+      <footer className="text-center border-t border-gray-300">
+        <div className="mx-auto max-w-3xl my-16">
+          Made with <span role="img">❤️</span> by Douglas Petla
+        </div>
       </footer>
-    </div>
+    </>
   )
 }
 

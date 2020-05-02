@@ -53,7 +53,7 @@ const NavBar = () => {
         className="px-1 md:px-3 lg:mx-5 py-3 shadow-none hover:opacity-75"
         href={`https://twitter.com/${social.twitter}`}
       >
-        GitHub
+        Twitter
       </a>
     </nav>
   )
