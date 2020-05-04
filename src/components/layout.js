@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import NavBar from "../components/nav-bar"
 import BackgroundImage from "gatsby-background-image"
 
