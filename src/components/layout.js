@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import NavBar from "../components/nav-bar"
 import BackgroundImage from "gatsby-background-image"
+import NavBar from "../components/nav-bar"
 
 export const backgroundImageFluid = graphql`
   fragment backgroundImageFluid on File {
