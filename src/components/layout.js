@@ -6,7 +6,7 @@ import NavBar from "../components/nav-bar"
 export const backgroundImageFluid = graphql`
   fragment backgroundImageFluid on File {
     childImageSharp {
-      fluid(quality: 50, maxWidth: 1500) {
+      fluid(quality: 75, maxWidth: 1920) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
