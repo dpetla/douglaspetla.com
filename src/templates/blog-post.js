@@ -1,6 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
+import { graphql, Link } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -59,11 +58,7 @@ export const pageQuery = graphql`
       }
     }
     image: file(absolutePath: { regex: $headerImage }) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+      ...backgroundImageFluid
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id

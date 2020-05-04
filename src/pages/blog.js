@@ -39,13 +39,6 @@ const BlogIndex = ({ data }) => {
                 </span>
                 {node.timeToRead} min
               </small>
-              {/* <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section> */}
             </article>
           )
         })}
@@ -63,11 +56,7 @@ export const pageQuery = graphql`
         regex: "/person-in-front-of-laptop-on-brown-wooden-table-2115217.jpg/"
       }
     ) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+      ...backgroundImageFluid
     }
     site {
       siteMetadata {
