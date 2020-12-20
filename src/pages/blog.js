@@ -36,7 +36,7 @@ const BlogIndex = ({ data }) => {
                 •
                 <span role="img" aria-label="clock">
                   ⏱
-                </span>
+                </span>{" "}
                 {node.timeToRead} min
               </small>
             </article>
