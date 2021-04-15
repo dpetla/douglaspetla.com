@@ -49,6 +49,7 @@ module.exports = {
               withWebP: true,
             },
           },
+          "gatsby-remark-static-images",
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
